@@ -14,7 +14,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("http://jsonplaceholder.typicode.com/users") //Lấy từ URL này
+    fetch("https://jsonplaceholder.typicode.com/users") //Lấy từ URL này
       .then((response) => response.json()) //Lấy phản hồi sau đó convert thành file json để JavaScript có thể hiểu đc
       .then((users) => this.setState({ monsters: users })); //Sau đó lấy ra users và setState monsters thành mảng đó
   }
